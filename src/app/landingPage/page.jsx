@@ -34,11 +34,14 @@ export default function LandingPage() {
             </Link>
           </li>
           <li>
-            <button>
-              <Link href="#">
-                Login
-              </Link>
-            </button>
+            <Link href="#"  className="px-4 py-2 rounded-full hover:text-orange-400 hover:bg-white  transition duration-200">
+              Login
+            </Link>
+          </li>
+          <li> 
+            <Link href="#"  className="text-orange-400 bg-white px-4 py-2 rounded-full hover:text-white hover:bg-transparent transition duration-200">
+              sign Up
+            </Link>
           </li>
         </ul>
       </nav>

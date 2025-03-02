@@ -79,22 +79,25 @@
 }
 
 #footer .subscribe{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   background: #fff;
   border-radius: 50px;
-  padding: 5px 10px;
+  padding: 5px;
 }
 
 .subscribe input{
-  width: 150px;
+  width: 160px;
   padding: 5px 10px;
   border: none;
+  border-radius: 50px;
   outline: none;
   color: #222;
 }
 
 .subscribe button{
-  width: 40%;
   padding: 10px;
   background: #f3a107;
   border-radius: 50px;
