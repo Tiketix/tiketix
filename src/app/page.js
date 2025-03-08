@@ -1,10 +1,10 @@
-import Image from "next/image";
+import LandingPage from "./landingPage/page.jsx";
 
 export default function Home() {
   return (
     <div>
       
-    <h2>EVENTS</h2>
+      <LandingPage />
     
     </div>
   
