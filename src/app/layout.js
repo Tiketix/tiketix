@@ -1,11 +1,11 @@
-import { Poppins } from "next/font/google";
+import { Work sans } from "next/font/google";
 import "./globals.css";
 
 
-const poppins = Poppins({
-  variable: ["--font-poppins"],
+const workSans = WorkSans({
+  variable: ["--font-WorkSans"],
   subsets: ["latin"],
-  weight: ["300"]
+  weight: ["300, 400, 500"]
 });
 
 
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable}`}
+        className={`${workSans.variable}`}
       >
         {children}
       </body>
