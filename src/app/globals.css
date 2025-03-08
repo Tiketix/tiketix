@@ -1,11 +1,11 @@
-/* styles/globals.css */
+/* Imported font */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* styles/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Imported font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* color variables */
 :root {
@@ -20,11 +20,12 @@ body,p,a,li{
     margin: 0;
     padding: 0;
     list-style-type: none;
+    font-family: "Work Sans", sans-serif;
   }
 
   /* base styles */
 body{
     background:var(--tertiary);
-    font-family: "Montserrat", serif;
+    font-family: "Work Sans", sans-serif;
 
   }

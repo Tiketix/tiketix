@@ -4,6 +4,7 @@ import Image from "next/image";
 import style from "./modules/nav.module.css";
 import style2 from "./modules/hero.module.css";
 import heroImage from "./img/hero.jpg";
+import Card from "./components/Card/page.jsx";
 
 export default function LandingPage() {
 
@@ -92,71 +93,12 @@ export default function LandingPage() {
         </div>
 
         <div className={style2.eventCards}>
-          <div className={style2.eventCard}>
-            <div className={style2.eventCardImage}>
-              <Image src={heroImage} alt="Event Image" />
-            </div>
-            <div className={style2.eventCardInfo}>
-              <h3>SWBS MTV The Kpop Show Ticket Package</h3>
-              <p>Look no further! Our SBS The Show tickets are the simplest way for you to experience a live Kpop recording .</p>
-              
-            </div>
-          </div>
-
-          <div className={style2.eventCard}>
-            <div className={style2.eventCardImage}>
-              <Image src={heroImage} alt="Event Image" />
-            </div>
-            <div className={style2.eventCardInfo}>
-              <h3>SWBS MTV The Kpop Show Ticket Package</h3>
-              <p>Look no further! Our SBS The Show tickets are the simplest way for you to experience a live Kpop recording .</p>
-              
-            </div>
-          </div>
-
-          <div className={style2.eventCard}>
-            <div className={style2.eventCardImage}>
-              <Image src={heroImage} alt="Event Image" />
-            </div>
-            <div className={style2.eventCardInfo}>
-              <h3>SWBS MTV The Kpop Show Ticket Package</h3>
-              <p>Look no further! Our SBS The Show tickets are the simplest way for you to experience a live Kpop recording .</p>
-              
-            </div>
-          </div>
-
-          <div className={style2.eventCard}>
-            <div className={style2.eventCardImage}>
-              <Image src={heroImage} alt="Event Image" />
-            </div>
-            <div className={style2.eventCardInfo}>
-              <h3>SWBS MTV The Kpop Show Ticket Package</h3>
-              <p>Look no further! Our SBS The Show tickets are the simplest way for you to experience a live Kpop recording .</p>
-              
-            </div>
-          </div>
-
-          <div className={style2.eventCard}>
-            <div className={style2.eventCardImage}>
-              <Image src={heroImage} alt="Event Image" />
-            </div>
-            <div className={style2.eventCardInfo}>
-              <h3>SWBS MTV The Kpop Show Ticket Package</h3>
-              <p>Look no further! Our SBS The Show tickets are the simplest way for you to experience a live Kpop recording .</p>
-              
-            </div>
-          </div>
-
-          <div className={style2.eventCard}>
-            <div className={style2.eventCardImage}>
-              <Image src={heroImage} alt="Event Image" />
-            </div>
-            <div className={style2.eventCardInfo}>
-              <h3>SWBS MTV The Kpop Show Ticket Package</h3>
-              <p>Look no further! Our SBS The Show tickets are the simplest way for you to experience a live Kpop recording .</p>
-              
-            </div>
-          </div>
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
         </div>
       </section>
 
@@ -226,42 +168,47 @@ export default function LandingPage() {
       </div>
 
       <footer id={style.footer}>
-        <div className={style.footerContent}>
-          <h3>Tiketix</h3>
-          <p>Tiketix is a self-service ticketing platform for live experiences that allows anyone to create, share, find and attend events that fuel their passions and enrich their lives.</p>
-        </div>
-
-        <div className={style.eventsPlan}>
-          <h3>Events Plan</h3>
-          <ul>
-            <li>Create setup</li>
-            <li>Sell Tickets</li>
-            <li>Online RSVP</li>
-            <li>Online Events</li>
-          </ul>
-        </div>
-
-        <div className={style.aboutTiketix}>
-          <h3>Tiketix</h3>
-          <ul>
-            <li>About Us</li>
-            <li>Press</li>
-            <li>Contact Us</li>
-            <li>Help Center</li>
-            <li>How it works</li>
-            <li>Privacy</li>
-            <li>Terms</li>
-          </ul>
-        </div>
-
-        <div className={style.stayConnectected}>
-          <h3>Stay In The Loop</h3>
-          <p>Join our mailing list to stay in the loop with our newest for Event and concert</p>
-          <div className={style.subscribe}>
-            <input type="text" placeholder="Enter your email address" />
-            <button>Subscribe Now</button>
+        <div id={style.footerMain}>
+          <div className={style.footerContent}>
+            <h3>Tiketix</h3>
+            <p>Tiketix is a self-service ticketing platform for live experiences that allows anyone to create, share, find and attend events that fuel their passions and enrich their lives.</p>
           </div>
+
+          <div className={style.eventsPlan}>
+            <h3>Events Plan</h3>
+            <ul>
+              <li>Create setup</li>
+              <li>Sell Tickets</li>
+              <li>Online RSVP</li>
+              <li>Online Events</li>
+            </ul>
+          </div>
+
+          <div className={style.aboutTiketix}>
+            <h3>Tiketix</h3>
+            <ul>
+              <li>About Us</li>
+              <li>Press</li>
+              <li>Contact Us</li>
+              <li>Help Center</li>
+              <li>How it works</li>
+              <li>Privacy</li>
+              <li>Terms</li>
+            </ul>
+          </div>
+
+          <div className={style.footerSubscribe}>
+            <h3>Stay In The Loop</h3>
+            <p>Join our mailing list to stay in the loop with our newest for Event and concert</p>
+            <div className={style.subscribe}>
+              <input type="text" placeholder="Your email address" />
+              <button>Subscribe Now</button>
+            </div>
+          </div>
+
         </div>
+        <hr />
+        <p className="text-center py-5 text-sm">Copyright © 2025 Tiketix.</p>
       </footer>
         
     </main>

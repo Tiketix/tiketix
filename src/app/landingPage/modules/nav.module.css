@@ -65,11 +65,16 @@
 
 #footer{
   background: #f3a107;
+  padding: 30px 50px 20px 50px;
   color: #fff;
-  padding: 20px 50px;
+}
+
+#footerMain{
+  color: #fff;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  margin-bottom: 50px;
 }
 
 #footer h3{
@@ -89,7 +94,7 @@
 }
 
 .subscribe input{
-  width: 160px;
+  width: 150px;
   padding: 5px 10px;
   border: none;
   border-radius: 50px;
