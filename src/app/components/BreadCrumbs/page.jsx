@@ -1,27 +1,38 @@
 "use client"
 import Link from "next/link";
 import style from "./crumbs.module.css"
+import { useRouter } from "next/router";
 
-export default function BreadCrumbs() {
+const BreadCrumbs = () => {
+  const router = useRouter();
+  const pathArray = router.asPath.split("/").filter((x) => x);
+  const categoryIndex = pathArray.indexOf("categories");
+  const crumbs = pathArray.slice(categoryIndex);
+
+  if(!crumbs.length) return null;
   return (
-    <div className={style.breadCrumbs}>
-      <ul className="flex">
-        <li>
-          <Link href="#">Home</Link>
+    <nav aria-label="breadcrumb">
+      <ol className={style.breadcrumb}>
+        <li className={style.breadcrumbItem}>
+          <Link href="/">
+            <a className={style.breadcrumbLink}>Home</a>
+          </Link>
         </li>
-        <li>
-          <Link href="#">Nigeria</Link>
-        </li>
-        <li>
-          <Link href="#">Lagos</Link>
-        </li>
-        <li>
-          <Link href="#">Events in Lagos</Link>
-        </li>
-        <li>
-          <Link href="#">Music</Link>
-        </li>
-      </ul>
-    </div>
+        {crumbs.map((crumb, index) => {
+          const href = `/${crumbs.slice(0, index + 1).join("/")}`;
+          return (
+            <li key={crumb} className={style.breadcrumbItem}>
+              <Link href={href}>
+                <a className={style.breadcrumbLink}>{crumb}</a>
+              </Link>
+            </li>
+          );
+        })}
+      </ol>
+    </nav>
   )
 }
+
+export default BreadCrumbs;
+
+
