@@ -6,3 +6,70 @@
   margin: auto 0;
   margin-left: 80px;
 }
+
+.link{
+  margin: 30px 10px ;
+  display: flex;
+}
+
+.link ol{
+  display: flex;
+}
+
+.link ol li{
+  margin: 0 5px;
+  display: flex;
+}
+
+.link ol li a{
+  padding: 8px 30px 8px 10px;
+  border: 1px solid grey;
+  border-radius: 50px;
+  transition: all ease-in-out .2s;
+}
+
+.link ol li .icon{
+  position: relative;
+  top: 13px;
+  right: 22px;
+  cursor: pointer;
+}
+
+.link ol li a:hover ,
+.link ol li .icon:hover{
+  background-color: #bbb3b3;
+}
+
+/* Popular Events section */
+.sectionHeader{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 10px;
+}
+
+.sectionHeader h1{
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffa500;
+}
+
+.sectionHeader .arrowIcons{
+  display: flex;
+
+}
+.sectionHeader .arrowIcons li{
+  display: flex;
+}
+
+.sectionHeader .arrowIcons li a{
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  margin-left: 10px;
+  transition: all ease-in-out .2s;  
+}
+
+.sectionHeader .arrowIcons li a:hover{
+  background-color: #bbb3b3;
+  border-radius: 50%;
+}

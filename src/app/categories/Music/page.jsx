@@ -4,6 +4,7 @@ import Link from 'next/link';
 import categoryImage from '../../../../public/img/category.png';
 import NavBar from "../../components/NavBar/page.jsx";
 import style from "./main.module.css";
+import { FaAngleDown,  FaAngleLeft ,  FaAngleRight  } from "react-icons/fa6";
 
 
 const Music = () => {
@@ -28,16 +29,41 @@ const Music = () => {
         </div>
       </div>
 
-      <div className="locations flex">
+      <div className={style.link}>
         <ol>
           <li>
-            <Link href="#" className="py-2 px-4 bg-transparent">Location</Link>
+            <Link href="#">Location</Link>
+            <FaAngleDown className={style.icon}/>
           </li>
           <li>
             <Link href="#">date</Link>
+            <FaAngleDown className={style.icon}/>
           </li>
         </ol>
       </div>
+
+      <section id={style.section} className={style.popularEvents}>
+        <div className={style.sectionHeader}>
+          <h1>Most popular events</h1>
+          <div>
+            <ul  className={style.arrowIcons}>
+              <li>
+                <Link href="#">
+                  <FaAngleLeft />
+                </Link>
+              </li>
+              <li>
+               <Link href="#">
+                 <FaAngleRight />
+                </Link> 
+              </li>
+            </ul>      
+          </div>
+          <div className={style.eventCards}>
+            
+          </div>
+        </div>
+      </section>
     </main>
     
     </>
