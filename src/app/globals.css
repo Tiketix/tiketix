@@ -1,4 +1,13 @@
 
+/* Primary font */
+
+
+/* styles/global.css */
+O
+
+
+
+
 /* Imported font */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -6,6 +15,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 
 /* color variables */
@@ -22,6 +32,10 @@ body,p,a,li{
     padding: 0;
     list-style-type: none;
     font-family: "Work Sans", sans-serif;
+
+
+
+
   }
 
   /* base styles */
@@ -29,6 +43,10 @@ body{
     background:var(--tertiary);
 
     font-family: "Work Sans", sans-serif;
+
+
+    font-family: "Work Sans", sans-serif;
+
 
 
 
