@@ -1,8 +1,12 @@
 "use client";
+
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import categoryImage from '../../../../public/img/category.png';
 import NavBar from "../../components/NavBar/page.jsx";
+import Card from "../../components/Card/page.jsx";
+import Footer from "../../components/Footer/page.jsx";
 import style from "./main.module.css";
 import { FaAngleDown,  FaAngleLeft ,  FaAngleRight  } from "react-icons/fa6";
 
@@ -59,13 +63,18 @@ const Music = () => {
               </li>
             </ul>      
           </div>
-          <div className={style.eventCards}>
-            
-          </div>
+        </div>
+        <div className={style.cardContainer}>
+          <Card />
+          <Card />
+          <Card />
+          <Card />
         </div>
       </section>
+
     </main>
-    
+    <Footer />
+
     </>
   )
 }

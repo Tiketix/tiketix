@@ -41,6 +41,9 @@
 }
 
 /* Popular Events section */
+#section{
+  margin-bottom: 60px;
+}
 .sectionHeader{
   display: flex;
   justify-content: space-between;
@@ -71,5 +74,13 @@
 
 .sectionHeader .arrowIcons li a:hover{
   background-color: #bbb3b3;
-  border-radius: 50%;
+}
+
+.cardContainer{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 0 20px;
 }

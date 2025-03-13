@@ -13,10 +13,10 @@
 
 .inputContainer{
   display: flex;
-  width: 80%;
+  width: 70%;
   height: 110px;
   align-self: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #ce9428;
   align-items: center;
   margin: 0 auto;
@@ -27,9 +27,7 @@
   bottom: 50px;
 }
 
-.inputBox{
-  padding-right: 15px;
-}
+
 
 .inputBox input{
   outline: none;

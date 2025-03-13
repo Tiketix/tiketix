@@ -1,5 +1,5 @@
 "use client"
-import heroImage from "../../img/hero.jpg";
+import heroImage from "../../../../public/landingPage/hero.jpg";
 import Image from "next/image";
 import style from "./card.module.css"
 

@@ -23,14 +23,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={workSans.variable}>
-
           {children}
         <footer>  
 
         </footer>
-
-        {children}
-
       </body>
     </html>
   );
