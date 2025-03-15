@@ -6,6 +6,7 @@ import Link from 'next/link';
 import categoryImage from '../../../../public/img/category.png';
 import NavBar from "../../components/NavBar/page.jsx";
 import Card from "../../components/Card/page.jsx";
+// import Carousel  from "../../components/Carousel/page.jsx"; 
 import Footer from "../../components/Footer/page.jsx";
 import style from "./main.module.css";
 import { FaAngleDown,  FaAngleLeft ,  FaAngleRight  } from "react-icons/fa6";

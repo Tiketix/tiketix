@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import style from "./login.module.css"
-import { IoMailOutline, IoLockClosedOutline, IoPersonOutline, IoEyeOutline, IoEyeOffOutline, IoLogoFacebook } from "react-icons/io5";
+import { IoLockClosedOutline, IoPersonOutline, IoEyeOutline, IoEyeOffOutline, IoLogoFacebook } from "react-icons/io5";
 import { FcGoogle } from "react-icons/fc";
 import Link from "next/link";
 
@@ -43,7 +43,7 @@ export default function Login() {
           </span>
           <br />
 
-          <Link href={""} className={style.forgotPassword}>Forgot Password?</Link>
+          <Link href={"#"} className={style.forgotPassword}>Forgot Password?</Link>
           <br /><br />
 
           <button className={style.loginBtn}>Login</button>

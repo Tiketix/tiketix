@@ -1,4 +1,5 @@
 "use client"
+
 import Link from "next/link";
 import Image from "next/image";
 import style from "./modules/nav.module.css";
@@ -7,6 +8,7 @@ import heroImage from "../../../public/landingPage/hero.jpg";
 import Card from "../components/Card/page.jsx";
 import NavBar from "../components/NavBar/page.jsx";
 import Footer from"../components/Footer/page.jsx";
+import BlogCard from "../components/BlogCard/page.jsx";
 
 export default function LandingPage() {
 
@@ -100,35 +102,9 @@ export default function LandingPage() {
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, vitae!</p>
         </div>
         <div className={style.blogCards}>
-          <div className={style.blogCard}>
-            <div className={style.blogCardImage}>
-              <Image src={heroImage} alt="Blog Image" />
-            </div>
-            <div className={style.blogCardInfo}>
-              <h3>6 Strategies to Find Your Conference Keynote and Other Speakers</h3>
-              <p>Look no further! Our SBS The Show tickets are the simplest way for you to experience a live Kpop recording .</p>
-            </div>
-          </div>
-
-          <div className={style.blogCard}>
-            <div className={style.blogCardImage}>
-              <Image src={heroImage} alt="Blog Image" />
-            </div>
-            <div className={style.blogCardInfo}>
-              <h3>How Successfully Used Paid Marketing to Drive Increamental Ticket Sales</h3>
-              <p>Look no further! Our SBS The Show tickets are the simplest way for you to experience a live Kpop recording .</p>
-            </div>
-          </div>
-
-          <div className={style.blogCard}>
-            <div className={style.blogCardImage}>
-              <Image src={heroImage} alt="Blog Image" />
-            </div>
-            <div className={style.blogCardInfo}>
-              <h3>Introducing Workspaces: Work smarter, not harder with new navigation</h3>
-              <p>Look no further! Our SBS The Show tickets are the simplest way for you to experience a live Kpop recording .</p>
-            </div>
-          </div>
+          <BlogCard heading={"6 Strategies to Find your Conference Keynote and Other Speakers"} content={"Look no further! Our SBS The Show tickets are the simplest way for you to experience a live kpop recording."}/>
+          <BlogCard heading={"How Successfully Used Paid Marketing to Drive Increamental Ticket Sales"} content={"Look no further! Our SBS The Show tickets are the simplest way for you to experience a live kpop recording."}/>
+          <BlogCard heading={"Introducing Workspaces: Work smarter, not harder with new navigation."} content={"Look no further! Our SBS The Show tickets are the simplest way for you to experience a live kpop recording."}/>
         </div>
       </section>
 

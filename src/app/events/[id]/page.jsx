@@ -58,7 +58,7 @@ const EventDetailPage = () => {
                     </div>
                 </section>
 
-                <section className='border border-2 hidden lg:block lg:w-72  rounded shadow-lg p-3 absolute top-0 right-36'>
+                <section className='border-2 hidden lg:block lg:w-72  rounded shadow-lg p-3 absolute top-0 right-36'>
                     <div className="flex flex-col justify-center items-center">
                         <p className='text-[18px] font-bold my-4'>Price</p>
                         <button className='bg-[#f05537] w-full h-12 flex justify-center items-center rounded text-white px-4 py-6 font-bold'>Reserve a spot</button>

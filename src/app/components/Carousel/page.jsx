@@ -6,15 +6,15 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import Image from 'next/image';
-// import categoryImage from '../../../../public/img/category.png';
+import categoryImage from '../../../../public/img/category.png';
 import style from "./carousel.module.css"
 
 const Carousel = () => {
   const images =[
-    {src:"../../../../public/img/category.png", alt:"image1"},
-    {src:"../../../../public/img/category.png", alt:"image1"},
-    {src:"../../../../public/img/category.png", alt:"image1"},
-    {src:"../../../../public/img/category.png", alt:"image1"},
+    {src:{categoryImage}, alt:"image1"},
+    {src:{categoryImage}, alt:"image1"},
+    {src:{categoryImage}, alt:"image1"},
+    {src:{categoryImage}, alt:"image1"},
   ];
   return (
     <Swiper
@@ -27,9 +27,9 @@ const Carousel = () => {
       loop={true}
       className={style.mySwiper}
     >
-      {images.map((image, index) => (
+      {images.map((Image, index) => (
         <SwiperSlide key={index}>
-          <Image src={images.src} alt={images.alt} />
+          <Image src={categoryImage} alt="images" />
         </SwiperSlide>
       ))}
     </Swiper>

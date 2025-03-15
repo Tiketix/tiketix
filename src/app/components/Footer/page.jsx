@@ -47,7 +47,7 @@ const Footer = () => {
 
         </div>
         <hr />
-        <p className="text-center py-5 text-sm">Copyright © 2025 Tiketix.</p>
+        <p className="text-center pt-5 text-sm">Copyright © 2025 Tiketix.</p>
       </footer>
     </>
   )
