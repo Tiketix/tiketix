@@ -1,11 +1,5 @@
 import { Work_Sans } from "next/font/google";
 import "./globals.css";
-import NavBar from "./components/NavBar/page.jsx";
-import style from "./components/NavBar/nav.module.css";
-import Link from 'next/link';
-
-
-
 
 
 const workSans = Work_Sans({
@@ -17,6 +11,9 @@ const workSans = Work_Sans({
 export const metadata = {
   title: "TICKETIX",
   description: "One stop event solutions",
+  icons: {
+    icon: "/Favicon/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
