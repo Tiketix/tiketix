@@ -32,7 +32,7 @@ const EventDetailPage = () => {
         <main className=''>
             <h1 className='text-center font-bold text-4xl mt-8'>Event Detail</h1>
             <section className='px-12 bg-red-30 py-4'>
-                <Image src='/temp/EventThumbnail.jpg' width={'700'} height={0} layout='intrinsic' className='rounded-xl mx-auto w-full lg:w-[800px]' />
+                <Image src='/temp/EventThumbnail.jpg' width={700} height={0} layout='intrinsic' className='rounded-xl mx-auto w-full lg:w-[800px]' />
             </section>
 
             <section className='w-full relative'>

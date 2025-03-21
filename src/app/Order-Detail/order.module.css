@@ -20,26 +20,6 @@
   margin-bottom: 20px;
 }
 
-.orderDetail .orderImage img{
-  border-radius: 10px;
-}
-
-.orderDetail .orderInfo{
-  margin-left: 10px;
-}
-
-.orderSummary{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-.placeOrder{
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
 .orderButton{
   padding: 15px 20px 15px 20px;
   background-color: #eb9d0d;
@@ -52,8 +32,4 @@
 .orderButton:hover{
   background-color: #f19f06;
   box-shadow:  5px 5px 10px rgba(0, 0, 0, .4);
-}
-
-.paymentMethod input[type="radio"] {
-  accent-color: #f19f06;
 }
