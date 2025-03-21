@@ -1,52 +1,23 @@
 "use client"
+
 import Link from "next/link";
 import Image from "next/image";
 import style from "./modules/nav.module.css";
 import style2 from "./modules/hero.module.css";
-import heroImage from "./img/hero.jpg";
-import Card from "./components/Card/page.jsx";
+import heroImage from "../../../public/landingPage/hero.jpg";
+import Card from "../components/Card/page.jsx";
+import NavBar from "../components/NavBar/page.jsx";
+import Footer from"../components/Footer/page.jsx";
+import BlogCard from "../components/BlogCard/page.jsx";
 
 export default function LandingPage() {
 
   return(
     <>
-    <div className={style.navBar}>
-      <h1 className="text-lg font-extrabold text-white">TIKETIX</h1>
-      <nav>
-        <ul className="flex space-x-4">
-        <li>
-            <Link href="#">
-              Schedule
-            </Link>
-          </li>
-          <li>
-            <Link href="#">
-              Speakers
-            </Link>
-          </li>
-          <li>
-            <Link href="#">
-              Ticket
-            </Link>
-          </li>
-          <li>
-            <Link href="#">
-              Contact           
-            </Link>
-          </li>
-          <li>
-            <Link href="#"  className="px-4 py-2 rounded-full hover:text-orange-400 hover:bg-white  transition duration-200">
-              Login
-            </Link>
-          </li>
-          <li> 
-            <Link href="#"  className="text-orange-400 bg-white px-4 py-2 rounded-full hover:text-white hover:bg-transparent transition duration-200">
-              sign Up
-            </Link>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <header>
+      <NavBar />
+    </header>
+    
 
     <div className={style2.hero}>
       <div className="flex gap-4">
@@ -131,87 +102,17 @@ export default function LandingPage() {
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, vitae!</p>
         </div>
         <div className={style.blogCards}>
-          <div className={style.blogCard}>
-            <div className={style.blogCardImage}>
-              <Image src={heroImage} alt="Blog Image" />
-            </div>
-            <div className={style.blogCardInfo}>
-              <h3>6 Strategies to Find Your Conference Keynote and Other Speakers</h3>
-              <p>Look no further! Our SBS The Show tickets are the simplest way for you to experience a live Kpop recording .</p>
-            </div>
-          </div>
-
-          <div className={style.blogCard}>
-            <div className={style.blogCardImage}>
-              <Image src={heroImage} alt="Blog Image" />
-            </div>
-            <div className={style.blogCardInfo}>
-              <h3>How Successfully Used Paid Marketing to Drive Increamental Ticket Sales</h3>
-              <p>Look no further! Our SBS The Show tickets are the simplest way for you to experience a live Kpop recording .</p>
-            </div>
-          </div>
-
-          <div className={style.blogCard}>
-            <div className={style.blogCardImage}>
-              <Image src={heroImage} alt="Blog Image" />
-            </div>
-            <div className={style.blogCardInfo}>
-              <h3>Introducing Workspaces: Work smarter, not harder with new navigation</h3>
-              <p>Look no further! Our SBS The Show tickets are the simplest way for you to experience a live Kpop recording .</p>
-            </div>
-          </div>
+          <BlogCard heading={"6 Strategies to Find your Conference Keynote and Other Speakers"} content={"Look no further! Our SBS The Show tickets are the simplest way for you to experience a live kpop recording."}/>
+          <BlogCard heading={"How Successfully Used Paid Marketing to Drive Increamental Ticket Sales"} content={"Look no further! Our SBS The Show tickets are the simplest way for you to experience a live kpop recording."}/>
+          <BlogCard heading={"Introducing Workspaces: Work smarter, not harder with new navigation."} content={"Look no further! Our SBS The Show tickets are the simplest way for you to experience a live kpop recording."}/>
         </div>
       </section>
 
       <div className={style2.more}>
         <Link href="#">Load more</Link>
       </div>
-
-      <footer id={style.footer}>
-        <div id={style.footerMain}>
-          <div className={style.footerContent}>
-            <h3>Tiketix</h3>
-            <p>Tiketix is a self-service ticketing platform for live experiences that allows anyone to create, share, find and attend events that fuel their passions and enrich their lives.</p>
-          </div>
-
-          <div className={style.eventsPlan}>
-            <h3>Events Plan</h3>
-            <ul>
-              <li>Create setup</li>
-              <li>Sell Tickets</li>
-              <li>Online RSVP</li>
-              <li>Online Events</li>
-            </ul>
-          </div>
-
-          <div className={style.aboutTiketix}>
-            <h3>Tiketix</h3>
-            <ul>
-              <li>About Us</li>
-              <li>Press</li>
-              <li>Contact Us</li>
-              <li>Help Center</li>
-              <li>How it works</li>
-              <li>Privacy</li>
-              <li>Terms</li>
-            </ul>
-          </div>
-
-          <div className={style.footerSubscribe}>
-            <h3>Stay In The Loop</h3>
-            <p>Join our mailing list to stay in the loop with our newest for Event and concert</p>
-            <div className={style.subscribe}>
-              <input type="text" placeholder="Your email address" />
-              <button>Subscribe Now</button>
-            </div>
-          </div>
-
-        </div>
-        <hr />
-        <p className="text-center py-5 text-sm">Copyright © 2025 Tiketix.</p>
-      </footer>
-        
     </main>
+    <Footer />
     </>
   );
 }

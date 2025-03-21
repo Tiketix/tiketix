@@ -1,0 +1,35 @@
+.wrapper{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+  margin-top: 150px;
+  margin-bottom: 30px;
+  padding: 15px 15px 20px 15px;
+}
+
+.orderDetail{
+  display: flex;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(49, 48, 48, 0.2);
+  margin-bottom: 20px;
+}
+
+.orderButton{
+  padding: 15px 20px 15px 20px;
+  background-color: #eb9d0d;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  transition: all ease-in-out .3s;
+}
+
+.orderButton:hover{
+  background-color: #f19f06;
+  box-shadow:  5px 5px 10px rgba(0, 0, 0, .4);
+}

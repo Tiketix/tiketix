@@ -1,0 +1,44 @@
+#footer{
+  background: #f3a107;
+  padding: 30px 50px 20px 50px;
+  color: #fff;
+}
+
+#footerMain{
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+#footer h3{
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+#footer .subscribe{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: #fff;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.subscribe input{
+  width: 150px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  color: #222;
+}
+
+.subscribe button{
+  padding: 10px;
+  background: #f3a107;
+  border-radius: 50px;
+}

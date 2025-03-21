@@ -8,7 +8,7 @@ const OrganizerOverviewPage = () => {
                 <h1 className='font-bold text-5xl'>Where Event Organizers Grow</h1>
                 <p>The all-in-one ticketing and discovery platform trusted by millions of organizers and attendees worldwide</p>
                 <div className="">
-                    <button className='bg-black text-white p-3 my-2 my-2 rounded-2xl mx-3'>Get started for free</button>
+                    <button className='bg-black text-white p-3 my-2 rounded-2xl mx-3'>Get started for free</button>
                     <button className='border-black border-2 p-3 rounded-2xl'>Contact Sales</button>
                 </div>
                 <div className="-mx-4 flex j">
