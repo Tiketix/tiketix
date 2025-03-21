@@ -30,7 +30,7 @@ const EventDetailPage = () => {
 
     return (
         <main className=''>
-            <h1 className='text-center font-bold text-4xl mt-8'>Event Detail</h1>
+            <h1 className='text-center font-bold text-4xl mt-8 text-[#EB9D0D]'>Event Detail</h1>
             <section className='px-12 bg-red-30 py-4'>
                 <Image src='/temp/EventThumbnail.jpg' width={700} height={0} layout='intrinsic' className='rounded-xl mx-auto w-full lg:w-[800px]' />
             </section>
@@ -41,8 +41,8 @@ const EventDetailPage = () => {
                         <span className='flex items-center bg-[#FEEDEA] w-max p-1 gap-1 font-semibold text-sm'>
                             <Image src='/temp/Fire.svg' width={16} height={0} layout="intrinsic" /> Few tickets left
                         </span>
-                        <h6 className='font-semibold my-2'>Monday, March 3</h6>
-                        <h1 className='font-bold max-sm:text-3xl text-4xl lg:text-5xl'>March LIVESTREAM 3-Day Asset Protection & Wealth Creation Summit</h1>
+                        <h6 className='font-semibold my-2 text-[#eb9d0d]'>Monday, March 3</h6>
+                        <h1 className='font-bold max-sm:text-3xl text-4xl lg:text-5xl text-[#eb9d0d]'>March LIVESTREAM 3-Day Asset Protection & Wealth Creation Summit</h1>
                         <p className='text-sm my-4'>Join Thousands that Have Attended the 3-Day Asset Protection & Wealth Creation Summit Now Available FREE ONLINE!</p>
                     </div>
 
@@ -54,14 +54,14 @@ const EventDetailPage = () => {
                                 <p className='bg-red-300 w-max p-1 rounded-md'><span className='font-bold'>13.3k</span> attendees hosted 📈</p>
                             </div>
                         </div>
-                        <button className='bg-blue-500 text-white px-12 rounded-lg'>Follow</button>
+                        <button className='bg-blue-500 text-white px-12 rounded-lg hover:shadow-lg transition-all'>Follow</button>
                     </div>
                 </section>
 
                 <section className='border-2 hidden lg:block lg:w-72  rounded shadow-lg p-3 absolute top-0 right-36'>
                     <div className="flex flex-col justify-center items-center">
                         <p className='text-[18px] font-bold my-4'>Price</p>
-                        <button className='bg-[#f05537] w-full h-12 flex justify-center items-center rounded text-white px-4 py-6 font-bold'>Reserve a spot</button>
+                        <button className='bg-[#eb9d0d] w-full h-12 flex justify-center items-center rounded text-white px-4 py-6 font-bold'>Reserve a spot</button>
                     </div>
                 </section>
             </section>
