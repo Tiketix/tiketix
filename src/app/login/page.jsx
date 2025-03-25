@@ -16,18 +16,18 @@ export default function Login() {
   }
 
   return (
-    <div className={style.container}>
+    <div className="w-[400px] flex flex-col justify-self-center rounded-[10px] shadow-[5px_5px_10px_rgba(0,0,0,0.2)] m-[150px_0_30px_0] p-[0_15px_20px_15px]">
 
-      <div className={style.containerTop}>
-        <h3 className={style.name}>TICKETIX</h3>
-        <h2>Welcome Back!</h2>
-        <p>Use your credentials to access your account</p>
+      <div className="text-center mt-0">
+        <h3 className="text-xl font-black text-[#ffa500] mb-5">TICKETIX</h3>
+        <h2 className="text-[28px] font-bold m-[30px_0]">Welcome Back!</h2>
+        <p className="m-[15px_0_0_0] text-[15px] text-[#444242bb]">Use your credentials to access your account</p>
       </div>
       
         <div className={style.userInput}>
         
           <IoPersonOutline className={style.icon}/>
-          <input type ="text" placeholder="Enter Username" required/>
+          <input type ="text" placeholder="Enter Username" required />
           <br />
           <IoLockClosedOutline className={style.icon}/> 
           <input className={style.lockInput}
@@ -43,26 +43,27 @@ export default function Login() {
           </span>
           <br />
 
-          <Link href={"#"} className={style.forgotPassword}>Forgot Password?</Link>
+          <Link href={"#"} className='flex float-right text-[15px] font-black text-[#ffa500] mt-[-20px]'>Forgot Password?</Link>
           <br /><br />
 
-          <button className={style.loginBtn}>Login</button>
+          <button className='w-full bg-[#ffa500] rounded-[10px] border-none outline-none text-[16px] font-extrabold text-white p-[16px] cursor-pointer transition ease-in-out duration-200 hover:scale-95'>Login</button>
        </div>
         <p className={style.hr}>or</p>
 
-        <div className={style.socialBtn}>
-          <button>
-           <span><IoLogoFacebook /></span>
-            Login with Facebook
-          </button>
-          <button>
-            <span><FcGoogle /></span>
-            Login with Google
-          </button>
+        <div className='flex flex-col text-center w-full mb-3'>
+        <div className="flex justify-center p-[15px] mb-[10px] border border-[1px_solid_#444242] outline-none rounded-[10px] text-[15px] font-[550] bg-transparent text-[#222] cursor-pointer transition ease-in-out duration-200 hover:scale-95">
+         <span className='relative top-1 mr-5'><IoLogoFacebook /></span>
+         <button>Login with Facebook</button>
+        </div>
+        
+        <div className="flex justify-center p-[15px] mb-[10px] border border-[1px_solid_#444242] outline-none rounded-[10px] text-[15px] font-[550] bg-transparent text-[#222] cursor-pointer transition ease-in-out duration-200 hover:scale-95">
+         <span className='relative top-1 mr-5'><FcGoogle /></span>
+         <button>Login with Google</button>
+        </div>
         </div>
         
 
-        <p className={style.signUp}>Don't have an account? <span><Link href="/registration">Sign up</Link></span></p>
+        <p className='text-center mt-[10px] text-[15px] font-bold'>Don't have an account? <Link href="/registration" className="text-[#ffa500] font-extrabold">Sign up</Link></p>
 
     </div>
   );

@@ -4,6 +4,9 @@ import Image from 'next/image'
 import { useParams } from 'next/navigation'
 import React from 'react'
 import { CiFlag1 } from "react-icons/ci";
+import tempFire from "../../../../public/temp/Fire.svg"
+import tempProtect from "../../../../public/temp/Protect.svg"
+import tempEventThumbnail from "../../../../public/temp/EventThumbnail.jpg"
 
 // import eventThumbnail from '/EventThumbnail.jpg'
 
@@ -32,14 +35,14 @@ const EventDetailPage = () => {
         <main className=''>
             <h1 className='text-center font-bold text-4xl mt-8 text-[#EB9D0D]'>Event Detail</h1>
             <section className='px-12 bg-red-30 py-4'>
-                <Image src='/temp/EventThumbnail.jpg' width={700} height={0} layout='intrinsic' className='rounded-xl mx-auto w-full lg:w-[800px]' />
+                <Image src={tempEventThumbnail} width={700} height={0} layout='intrinsic' className='rounded-xl mx-auto w-full lg:w-[800px]' />
             </section>
 
             <section className='w-full relative'>
                 <section className='lg:w-[60%] mx-8 lg:mx-24 px-6 my-3 '>
                     <div className="">
                         <span className='flex items-center bg-[#FEEDEA] w-max p-1 gap-1 font-semibold text-sm'>
-                            <Image src='/temp/Fire.svg' width={16} height={0} layout="intrinsic" /> Few tickets left
+                            <Image src={tempFire} width={16} height={0} layout="intrinsic" alt='event'/> Few tickets left
                         </span>
                         <h6 className='font-semibold my-2 text-[#eb9d0d]'>Monday, March 3</h6>
                         <h1 className='font-bold max-sm:text-3xl text-4xl lg:text-5xl text-[#eb9d0d]'>March LIVESTREAM 3-Day Asset Protection & Wealth Creation Summit</h1>
@@ -48,7 +51,7 @@ const EventDetailPage = () => {
 
                     <div className="flex bg-[#f8f7fa] flex-col md:flex-row gap-2 py-4 px-4 justify-between">
                         <div className="flex flex-col md:flex-row gap-3">
-                            <Image src='/temp/Protect.svg' width={50} height={0} className='rounded-full' />
+                            <Image src={tempProtect} width={50} height={0} className='rounded-full' />
                             <div className="">
                                 <p>By <span className='font-bold'>Protect Wealth Academy . 3.1k </span> followers</p>
                                 <p className='bg-red-300 w-max p-1 rounded-md'><span className='font-bold'>13.3k</span> attendees hosted 📈</p>
@@ -90,11 +93,11 @@ const EventDetailPage = () => {
                         <h3 className='font-bold text-lg'>Highlights</h3>
                         <ul>
                             <li>
-                                <Image />
+                                <Image src={tempEventThumbnail} alt='event' />
                                 <p>2 days, 7 hours</p>
                             </li>
                             <li>
-                                <Image />
+                                <Image src={tempEventThumbnail} alt='event' />
                                 <p>Online</p>
                             </li>
                         </ul>
@@ -131,7 +134,7 @@ const EventDetailPage = () => {
                 <div className="bg-[#f6f7fa] p-5 rounded-lg w-full">
                     <div className="flex flex-col md:flex-row justify-between mb-8">
                         <div className="flex flex-col md:flex-row gap-2">
-                            <Image src='/temp/Protect.svg' width={50} height={0} className='rounded-full' />
+                            <Image src={tempProtect} width={50} height={0} className='rounded-full' />
                             <div className="">
                                 <h3>Protect Wealth Academy</h3>
                                 <p><span className='font-bold'>3.1k</span> followers</p>
@@ -150,7 +153,7 @@ const EventDetailPage = () => {
 
             <section>
                 <div className="w-[60%] mx-8  my-8 flex justify-center items-center gap-2">
-                    <CiFlag1 color='#3b82f6' />
+                    <CiFlag1 className='text-[#3b82f6]' />
                     <p className='text-blue-500'>Report this event</p>
                 </div>
             </section>

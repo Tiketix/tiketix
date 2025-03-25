@@ -16,13 +16,13 @@ export default function NavBar() {
             </li>
           ))}
           <li>
-            <Link  href="#" className="px-4 py-2 rounded-full hover:text-orange-400 hover:bg-white transition duration-200" >
+            <Link  href="/login" className="px-4 py-2 rounded-full hover:text-orange-400 hover:bg-white transition duration-200" >
               Login
             </Link>
           </li>
           <li>
             <Link 
-              href="#" 
+              href="/register" 
               className="px-4 py-2 rounded-full text-dark text-orange-400 bg-white hover:text-white hover:bg-transparent transition duration-200"
             >
               Sign Up
