@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: row-reverse;
   position: relative;
-  bottom: 16px;
+  bottom: 17px;
   left: 330px;
   max-width: 30px;
   font-size: 18px;
@@ -38,13 +38,13 @@
   font-size: 14px;
 }
 
-.hr:after{
+.hr::after{
   content: "";
-  display: block;
+  display:block;
   position: relative;
-  left: 90px;
+  left: 100px;
   bottom: 9px;
-  width: 160px;
+  width: 150px;
   height: 1px;
   background-color: #444242bb;
   margin: 0 auto;
@@ -52,9 +52,9 @@
 
 .hr::before{
   content: "";
-  display: block;
+  display:block;
   position: relative;
-  right: 90px;
+  right: 100px;
   top: 12px;
   width: 160px;
   height: 1px;

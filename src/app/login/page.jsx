@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react";
-import style from "./login.module.css"
+import style from "../modules/register.module.css"
 import { IoLockClosedOutline, IoPersonOutline, IoEyeOutline, IoEyeOffOutline, IoLogoFacebook } from "react-icons/io5";
 import { FcGoogle } from "react-icons/fc";
 import Link from "next/link";
@@ -46,9 +46,9 @@ export default function Login() {
           <Link href={"#"} className='flex float-right text-[15px] font-black text-[#ffa500] mt-[-20px]'>Forgot Password?</Link>
           <br /><br />
 
-          <button className='w-full bg-[#ffa500] rounded-[10px] border-none outline-none text-[16px] font-extrabold text-white p-[16px] cursor-pointer transition ease-in-out duration-200 hover:scale-95'>Login</button>
+          <button type="submit" className='w-full bg-[#ffa500] rounded-[10px] border-none outline-none text-[16px] font-extrabold text-white p-[16px] cursor-pointer transition ease-in-out duration-200 hover:scale-95'>Login</button>
        </div>
-        <p className={style.hr}>or</p>
+        <p className={style.hr}>Or</p>
 
         <div className='flex flex-col text-center w-full mb-3'>
         <div className="flex justify-center p-[15px] mb-[10px] border border-[1px_solid_#444242] outline-none rounded-[10px] text-[15px] font-[550] bg-transparent text-[#222] cursor-pointer transition ease-in-out duration-200 hover:scale-95">

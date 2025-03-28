@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from 'react';
-import style from "./register.module.css"
+import style from "../modules/register.module.css"
 import { IoMailOutline, IoLockClosedOutline, IoPersonOutline, IoEyeOutline, IoEyeOffOutline, IoLogoFacebook } from "react-icons/io5";
 import { FcGoogle } from "react-icons/fc";
 import Link from "next/link"
@@ -47,7 +47,7 @@ export default function Registration() {
           </span>
           <br />
 
-        <button className='w-full p-4 text-white rounded-[10px] border-none outline-none bg-[#ffa500] text-[16px] font-extrabold cursor-pointer transition ease-in-out duration-200 hover:scale-95 '>Signup</button>
+        <button type='submit' className='w-full p-4 text-white rounded-[10px] border-none outline-none bg-[#ffa500] text-[16px] font-extrabold cursor-pointer transition ease-in-out duration-200 hover:scale-95 '>Signup</button>
       </div>
 
       <p className={style.hr}>Or</p>

@@ -35,7 +35,7 @@ const EventDetailPage = () => {
         <main className=''>
             <h1 className='text-center font-bold text-4xl mt-8 text-[#EB9D0D]'>Event Detail</h1>
             <section className='px-12 bg-red-30 py-4'>
-                <Image src={tempEventThumbnail} width={700} height={0} layout='intrinsic' className='rounded-xl mx-auto w-full lg:w-[800px]' />
+                <Image src={tempEventThumbnail} width={700} height={0} layout='intrinsic' className='rounded-xl mx-auto w-full lg:w-[800px]' alt='event thumbnail' />
             </section>
 
             <section className='w-full relative'>
@@ -51,7 +51,7 @@ const EventDetailPage = () => {
 
                     <div className="flex bg-[#f8f7fa] flex-col md:flex-row gap-2 py-4 px-4 justify-between">
                         <div className="flex flex-col md:flex-row gap-3">
-                            <Image src={tempProtect} width={50} height={0} className='rounded-full' />
+                            <Image src={tempProtect} width={50} height={0} className='rounded-full' alt='event' />
                             <div className="">
                                 <p>By <span className='font-bold'>Protect Wealth Academy . 3.1k </span> followers</p>
                                 <p className='bg-red-300 w-max p-1 rounded-md'><span className='font-bold'>13.3k</span> attendees hosted 📈</p>
@@ -134,7 +134,7 @@ const EventDetailPage = () => {
                 <div className="bg-[#f6f7fa] p-5 rounded-lg w-full">
                     <div className="flex flex-col md:flex-row justify-between mb-8">
                         <div className="flex flex-col md:flex-row gap-2">
-                            <Image src={tempProtect} width={50} height={0} className='rounded-full' />
+                            <Image src={tempProtect} width={50} height={0} className='rounded-full' alt='event' />
                             <div className="">
                                 <h3>Protect Wealth Academy</h3>
                                 <p><span className='font-bold'>3.1k</span> followers</p>
