@@ -18,7 +18,7 @@ export default function LandingPage() {
     </header>
     
 
-    <div className="bg-[#ffa500] bg-cover bg-center w-full h-screen p-4 md:p-8 flex justify-center items-center text-white">
+    <div className="bg-[#ff6600] bg-cover bg-center w-full h-screen p-4 md:p-8 flex justify-center items-center text-white">
       <div className="flex gap-4">
         <div className="w-1/2 p-4">
           <Image src={heroImage} alt="Hero Image"  />
@@ -28,8 +28,8 @@ export default function LandingPage() {
           <h1 className="text-4xl font-extrabold text-white">SWBS MTV The Kpop Show Ticket Package</h1>
           <p className="text-white my-10">Look no further! Our SBS The Show tickets are the simplest way for you to experience a live Kpop recording .</p>
           <div className="flex w-full gap-4">
-           <button className="bg-orange-400 text-white font-bold py-4 px-3 rounded-full w-1/2 hover:bg-transparent hover:border-2 hover:border-white transition duration-100">Get Ticket</button>
-           <button className="bg-transparent  text-white font-bold border-2 border-white py-4 px-3 rounded-full w-1/2  hover:border-0 hover:bg-orange-400 transition duration-100">Learn more</button>
+           <button className="bg-[#003366] text-white font-bold py-4 px-3 rounded-full w-1/2 transition duration-100 hover:shadow-2xl  hover:bg-[#008080] ease-in-out">Get Ticket</button>
+           <button className="bg-[#003366] text-white font-bold py-4 px-3 rounded-full w-1/2 transition duration-100 hover:shadow-2xl hover:bg-[#008080] ease-in-out">Learn more</button>
           </div>
         </div>
         
@@ -54,16 +54,16 @@ export default function LandingPage() {
     <main>
       <section className="mx-auto my-0 w-[90%]">
         <div className="flex justify-between mb-16">
-          <h2 className="text-[2rem] font-black">Upcoming Events</h2>
+          <h2 className="text-4xl mb-3 font-semibold text-[#003366]">Upcoming Events</h2>
           <ul className="flex space-x-4">
             <li>
-              <Link href="#" className="bg-[#e78c2a] rounded-[50px] py-2 px-4 text-white">Weekdays</Link>
+              <Link href="#" className="bg-[#d1cbcb] rounded-[50px] py-3 px-5 text-black font-medium">Weekdays</Link>
             </li>
             <li>
-              <Link href="#" className="bg-[#e78c2a] rounded-[50px] py-2 px-4 text-white">Event Type</Link> 
+              <Link href="#" className="bg-[#d1cbcb] rounded-[50px] py-3 px-5 text-black font-medium">Event Type</Link> 
             </li>
             <li>
-              <Link href="#" className="bg-[#e78c2a] rounded-[50px] py-2 px-4 text-white">Any Type</Link> 
+              <Link href="#" className="bg-[#d1cbcb] rounded-[50px] py-3 px-5 text-black font-medium">Any Type</Link> 
             </li>
           </ul>
         </div>

@@ -6,15 +6,15 @@ import style from "./footer.module.css"
 const Footer = () => {
   return (
     <>
-      <footer id={style.footer}>
-        <div id={style.footerMain}>
+      <footer className='bg-[#ff6600] p-[30px_50px_20px_50px] text-white'>
+        <div className={style.footerMain}>
           <div className={style.footerContent}>
-            <h3>Tiketix</h3>
+            <h3 className='mb-[30px] text-[25px] font-black'>Tiketix</h3>
             <p>Tiketix is a self-service ticketing platform for live experiences that allows anyone to create, share, find and attend events that fuel their passions and enrich their lives.</p>
           </div>
 
           <div className={style.eventsPlan}>
-            <h3>Events Plan</h3>
+            <h3 className='mb-[30px] text-[25px] font-black'>Events Plan</h3>
             <ul>
               <li>Create setup</li>
               <li>Sell Tickets</li>
@@ -24,7 +24,7 @@ const Footer = () => {
           </div>
 
           <div className={style.aboutTiketix}>
-            <h3>Tiketix</h3>
+            <h3 className='mb-[30px] text-[25px] font-black'>Tiketix</h3>
             <ul>
               <li>About Us</li>
               <li>Press</li>
@@ -37,11 +37,11 @@ const Footer = () => {
           </div>
 
           <div className={style.footerSubscribe}>
-            <h3>Stay In The Loop</h3>
+            <h3 className='mb-[30px] text-[25px] font-black'>Stay In The Loop</h3>
             <p>Join our mailing list to stay in the loop with our newest for Event and concert</p>
-            <div className={style.subscribe}>
-              <input type="text" placeholder="Your email address" />
-              <button>Subscribe Now</button>
+            <div className='mt-[30px] flex justify-between w-full bg-white rounded-[50px] p-[3px]'>
+              <input type="text" placeholder="Your email address" className='w-[150px] py-[5px] px-[10px] border-0 outline-0 rounded-[50px] text-[#222]' />
+              <button className='p-[10px] bg-[#003366] rounded-[50px]'>Subscribe Now</button>
             </div>
           </div>
 

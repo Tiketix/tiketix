@@ -1,10 +1,10 @@
 "use client"
+
 import Link from "next/link"
-import style from "./nav.module.css"
 
 export default function NavBar() {
   return (
-    <div className={style.navBar}>
+    <div className="flex justify-between items-center px-8 py-8 text-white bg-[#ff6600] shadow-[0_0_10px_rgba(0,0,0,0.1)] fixed top-0 w-full z-[1000]">
       <h1 className="text-lg font-bold text-white">TIKETIX</h1>
       <nav>
         <ul className="flex space-x-4">
@@ -22,7 +22,7 @@ export default function NavBar() {
           </li>
           <li>
             <Link 
-              href="/register" 
+              href="/registration" 
               className="px-4 py-2 rounded-full text-dark text-orange-400 bg-white hover:text-white hover:bg-transparent transition duration-200"
             >
               Sign Up
