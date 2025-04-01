@@ -8,6 +8,7 @@ import Card from "../components/Card/page.jsx";
 import NavBar from "../components/NavBar/page.jsx";
 import Footer from"../components/Footer/page.jsx";
 import BlogCard from "../components/BlogCard/page.jsx";
+import { FaAngleDown } from "react-icons/fa6";
 
 export default function LandingPage() {
 
@@ -55,15 +56,18 @@ export default function LandingPage() {
       <section className="mx-auto my-0 w-[90%]">
         <div className="flex justify-between mb-16">
           <h2 className="text-4xl mb-3 font-semibold text-[#003366]">Upcoming Events</h2>
-          <ul className="flex space-x-4">
-            <li>
-              <Link href="#" className="bg-[#d1cbcb] rounded-[50px] py-3 px-5 text-black font-medium">Weekdays</Link>
+          <ul className="flex space-x-3">
+            <li className="flex">
+              <Link href="#" className="bg-[#d1cbcb] rounded-[50px] py-3 px-5 pr-14 text-black font-medium">Weekdays</Link>
+              <span className="relative top-4 right-8"><FaAngleDown /></span>
             </li>
-            <li>
-              <Link href="#" className="bg-[#d1cbcb] rounded-[50px] py-3 px-5 text-black font-medium">Event Type</Link> 
+            <li className="flex">
+              <Link href="#" className="bg-[#d1cbcb] rounded-[50px] py-3 px-5 pr-14 text-black font-medium">Event Type</Link>
+              <span className="relative top-4 right-8"><FaAngleDown /></span>
             </li>
-            <li>
-              <Link href="#" className="bg-[#d1cbcb] rounded-[50px] py-3 px-5 text-black font-medium">Any Type</Link> 
+            <li className="flex">
+              <Link href="#" className="bg-[#d1cbcb] rounded-[50px] py-3 px-5 pr-14 text-black font-medium">Any Type</Link>
+              <span className="relative top-4 right-8"><FaAngleDown /></span>
             </li>
           </ul>
         </div>
@@ -79,14 +83,14 @@ export default function LandingPage() {
       </section>
 
       <div className="text-center my-20">
-        <Link href="#" className="bg-transparent border-2 border-[#ffa500] rounded-[50px] py-5 px-[50px] font-extrabold transition  ease-in-out duration-300 hover:bg-[#ffa500] hover:text-white">Load more....</Link>
+        <Link href="#" className="bg-transparent border-2 border-[#ff6600] rounded-[50px] py-5 px-[50px] font-bold transition  ease-in-out duration-300 hover:bg-[#ff6600] hover:text-white">Load more....</Link>
       </div>
 
-      <section className="flex w-full px-5 py-8 bg-[#d89246] mb-8">
+      <section className="flex w-full px-5 py-8 bg-[#f18b47] mb-8">
         <div className="text-center w-full text-white">
           <h2>Make Your own Event</h2>
           <p>Are you an event organizer? Create your event and sell tickets with us</p>
-          <button className="mt-8 bg-[#ffa500] rounded-[50px] w-[400px] text-center text-white p-[10px] font-extrabold cursor-pointer transition ease-in-out duration-200 hover:bg-[#fdba74]">Create Event</button>
+          <button className="mt-8 bg-[#ffa500] rounded-[50px] w-[400px] text-center text-white p-[10px] font-extrabold cursor-pointer transition ease-in-out duration-200 shadow-lg hover:bg-[#fdba74] hover:shadow-2xl">Create Event</button>
         </div>
       </section>
 
@@ -114,7 +118,7 @@ export default function LandingPage() {
       </section>
 
       <div className="text-center my-20">
-        <Link href="#" className="bg-transparent border-2 border-[#ffa500] rounded-[50px] py-5 px-[50px] font-extrabold transition  ease-in-out duration-300 hover:bg-[#ffa500] hover:text-white">Load more</Link>
+        <Link href="#" className="bg-transparent border-2 border-[#ff6600] rounded-[50px] py-5 px-[50px] font-bold transition  ease-in-out duration-300 hover:bg-[#ff6600] hover:text-white">Load more</Link>
       </div>
     </main>
     <Footer />
