@@ -1,10 +1,15 @@
-import Image from "next/image";
+import LandingPage from "./landingPage/page.jsx";
+import Head from "next/head.js";
 
 export default function Home() {
   return (
-    <div>
-      <h2 className="text-blue-700">EVENTS</h2>
-    </div>
-
+    <>
+      <Head>
+        <link rel="icon" href="/Favicon/favicon.ico" />
+      </Head>
+      <LandingPage />
+    
+    </>
+  
   );
 }
