@@ -24,17 +24,17 @@ const OrganizerOverviewPage = () => {
                 <div className="flex flex-col-reverse mt-12 gap-3 lg:flex-row">
                     <div className="w-full lg:w-1/2">
                         <div className="">
-                            <Image />
+                            {/* <Image /> */}
                             <h3 className='font-bold text-lg my-2'>Event Ticketing</h3>
                             <p className='text-[18px]'>Sell more tickets with customizable event pages and a seamless checkout experience for attendees on a trusted platform</p>
                         </div>
                         <div className="">
-                            <Image />
+                            {/* <Image /> */}
                             <h3 className='font-bold text-lg my-2'>Reporting & Analytics</h3>
                             <p className='text-[18px]'>Learn more about your buyers and discover where sales are coming from with real-time analytics</p>
                         </div>
                         <div className="">
-                            <Image />
+                            {/* <Image /> */}
                             <h3 className='font-bold text-lg my-2'>Organizer App</h3>
                             <p className='text-[18px]'>Check guests in, sell tickets at the door, and track data with our easy-to-use Eventbrite Organizer App</p>
                         </div>
@@ -66,17 +66,17 @@ const OrganizerOverviewPage = () => {
                 <div className="flex flex-col-reverse lg:flex-row my-12">
                     <div className="w-full lg:w-1/2">
                         <div className="">
-                            <Image />
+                            {/* <Image /> */}
                             <h4 className='font-bold text-lg'>Attendee Discovery</h4>
                             <p className='text-[18px] my-2'>Personalized recommendations are tailored to attendees' interests and location, matching them with events they’d be most interested in attending</p>
                         </div>
                         <div className="">
-                            <Image />
+                            {/* <Image /> */}
                             <h4 className='font-bold text-lg'>Attendee Discovery</h4>
                             <p className='text-[18px] my-2'>Personalized recommendations are tailored to attendees' interests and location, matching them with events they’d be most interested in attending</p>
                         </div>
                         <div className="">
-                            <Image />
+                            {/* <Image /> */}
                             <h4 className='font-bold text-lg'>Attendee Discovery</h4>
                             <p className='text-[18px] my-2'>Personalized recommendations are tailored to attendees' interests and location, matching them with events they’d be most interested in attending</p>
                         </div>
@@ -91,22 +91,22 @@ const OrganizerOverviewPage = () => {
                 <h2 className='font-black text-4xl md:text-6xl'>All the tools you need to host an event & grow your community</h2>
                 <div className="my-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
                     <div className="">
-                        <Image />
+                        {/* <Image /> */}
                         <h4 className='font-bold underline text-[20px]'>Event Ticketing</h4>
                         <p className='text-[18px]'>Everything you need to sell tickets for in-person or online events</p>
                     </div>
                     <div className="">
-                        <Image />
+                        {/* <Image /> */}
                         <h4 className='font-bold underline text-[20px]'>Ads</h4>
                         <p className='text-[18px]'>Create no-hassle ads that promote your event on Tiketix</p>
                     </div>
                     <div className="">
-                        <Image />
+                        {/* <Image /> */}
                         <h4 className='font-bold underline text-[20px]'>Marketing Tools</h4>
                         <p className='text-[18px]'>All the event marketing tools you need in one place</p>
                     </div>
                     <div className="">
-                        <Image />
+                        {/* <Image /> */}
                         <h4 className='font-bold underline text-[20px]'>Payments</h4>
                         <p className='text-[18px]'>Easily collect and simplify event payments</p>
                     </div>
