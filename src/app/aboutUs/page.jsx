@@ -42,7 +42,7 @@ const page = () => {
           <div className="explore">
             <p className='mb-12'>Discover more. Experience better. With <span><Link href="/" className='text-[#ff6600] transition ease-in-out hover:underline hover:text-[#f5673c] active:text-[#c43030]'>TIKEtix</Link></span></p>
 
-            <buttton className="bg-[#008080] p-[15px_20px_15px_20px] text-white rounded-tl-lg rounded-br-lg cursor-pointer transition ease-in-out duration-200 hover:bg-[#003366]">EXPLORE MORE</buttton>
+            <button className="bg-[#008080] p-[15px_20px_15px_20px] text-white rounded-tl-lg rounded-br-lg cursor-pointer transition ease-in-out duration-200 hover:bg-[#003366]">EXPLORE MORE</button>
           </div>
           
         </section>
