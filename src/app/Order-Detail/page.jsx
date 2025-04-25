@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react';
 import style from "./order.module.css"
 import Image from 'next/image';
@@ -6,9 +8,9 @@ import image from "../../../public/img/category.png"
 const Order = () => {
   return (
     <>
-      <div className={style.wrapper}>
+      <div className="w-[400px] flex flex-col justify-self-center border-none rounded-[10px] shadow-[5px_5px_10px_rgba(0,0,0,0.2)] mt-[150px] mb-[30px] p-[15px_15px_20px_15px]">
         <h2 className='text-2xl font-bold mb-5 text-center'>Order Details</h2>
-        <div className={style.orderDetail}>
+        <div className="flex p-[10px] border-none rounded-[10px] shadow-[5px_5px_10px_rgba(49,48,48,0.2)] mb-[20px]">
           <div className={style.orderImage}>
             <Image src={image} alt="order" width={100} height={150} className='rounded-[10px]' />
           </div>
@@ -56,7 +58,7 @@ const Order = () => {
             <p>Price</p>
             <span className="font-bold">$33.00</span>
           </div>
-          <button className={style.orderButton}>Place Order</button>
+          <button className="p-[15px_20px_15px_20px] bg-[#eb9d0d] text-white rounded-[10px] border-none transition ease-in-out duration-300 hover:bg-[#f19f06] hover:shadow-[5px_5px_10px_rgba(0,0,0,0.4)]">Place Order</button>
         </div>
       </div>
     </>

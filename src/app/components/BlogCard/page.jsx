@@ -2,18 +2,17 @@
 
 import Image from 'next/image'
 import React from 'react'
-import style from "./blog.module.css"
 import heroImage from "../../../../public/landingPage/hero.jpg"
 
 const BlogCard = ({ heading, content }) => {
   return (
     <>
-      <div className={style.blogCard}>
-        <div className={style.blogCardImage}>
-          <Image src={heroImage} alt="Blog Image" />
+      <div className='w-[300px] overflow-hidden bg-white '>
+        <div>
+          <Image src={heroImage} alt="Blog Image" className='w-full h-[200px] bg-cover bg-center rounded-[20px] mb-5' />
         </div>
-        <div className={style.blogCardInfo}>
-          <h3>{heading}</h3>
+        <div>
+          <h3 className='text-2xl font-bold mb-5'>{heading}</h3>
           <p>{content}</p>
         </div>
       </div>
