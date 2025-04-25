@@ -34,7 +34,7 @@ export default function Registration() {
     };
 
     const request = await fetch(
-      "http://localhost:5013/api/authentication/register-user",{
+      "https://tiketix.onrender.com/api/authentication/register-user",{
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(sampleBody)}
@@ -93,6 +93,7 @@ export default function Registration() {
 
         <button
           type="submit"
+          // onClick={}
           className="w-full p-4 text-white rounded-[10px] border-none outline-none bg-[#ffa500] text-[16px] font-extrabold cursor-pointer transition ease-in-out duration-200 hover:scale-95 "
         >
           Signup
