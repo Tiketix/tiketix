@@ -10,15 +10,18 @@ export default function NavBar() {
       </h1>
       <nav>
         <ul className="flex space-x-4">
-          {["Schedule", "Speakers", "Ticket", "Contact"].map((item) => (
-            <li key={item}>
-              <Link href="#">{item}</Link>
+          {[{ label: "Schedule", href: "#schedule" },
+            { label: "Speakers", href: "#speakers" },
+            { label: "Ticket", href: "#ticket" },
+            { label: "Contact", href: "#contact" }].map((item) => (
+            <li key={item.label}>
+              <Link href={item.href}>{item.label}</Link>
             </li>
           ))}
           <li>
             <Link
               href="/login"
-              className="px-4 py-2 rounded-full hover:text-orange-400 hover:bg-white transition duration-200"
+              className="px-4 py-2 rounded-full text-white bg-[#003366] hover:text-white hover:shadow-lg hover:scale-95 hover:bg-[#008080] transition duration-300 ease-in-out"
             >
               Login
             </Link>
@@ -26,7 +29,7 @@ export default function NavBar() {
           <li>
             <Link
               href="/registration"
-              className="px-4 py-2 rounded-full text-dark text-orange-400 bg-white hover:text-white hover:bg-transparent transition duration-200"
+              className="px-4 py-2 rounded-full text-white bg-[#003366] hover:text-white hover:shadow-lg hover:scale-95 hover:bg-[#008080] transition duration-300 ease-in-out"
             >
               Sign Up
             </Link>
