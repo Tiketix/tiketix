@@ -8,9 +8,9 @@ export default function NavBar() {
       <h1 className="text-lg font-bold text-white">TIKETIX</h1>
       <nav>
         <ul className="flex space-x-4">
-          {["Schedule", "Speakers", "Ticket", "Contact"].map((item) => (
+          {["Events", "Create event", "Contact"].map((item) => (
             <li key={item}>
-              <Link href="#">
+              <Link href={`/${item.replace(" ", "-").toLowerCase()}`}>
                 {item}
               </Link>
             </li>
@@ -22,7 +22,7 @@ export default function NavBar() {
           </li>
           <li>
             <Link 
-              href="/register" 
+              href="/registration" 
               className="px-4 py-2 rounded-full text-dark text-orange-400 bg-white hover:text-white hover:bg-transparent transition duration-200"
             >
               Sign Up
