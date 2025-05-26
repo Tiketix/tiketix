@@ -12,12 +12,3 @@ export function setAuthToken(token) {
     delete api.defaults.headers.common.Authorization;
   }
 }
-
-// api.interceptors.response.use(
-//   res => res,
-//   err => {
-//     // e.g. 401 → kick to /auth/login
-//     // console.error(err);
-//     return Promise.reject(err);
-//   }
-// );
