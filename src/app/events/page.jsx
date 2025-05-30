@@ -33,9 +33,10 @@ export default function EventsPage() {
           time:        evt.eventTime,      // "7pm"
           location:    evt.location,
           tickets:     evt.ticketsAvailable,
+          price:       evt.ticketPrice,
 
           /* temp placeholders until DB adds them */
-          price:       Math.floor(Math.random() * 30000) + 5000, // ₦5k–₦35k
+          // price:       Math.floor(Math.random() * 30000) + 5000, // ₦5k–₦35k
           image:       'https://via.placeholder.com/600x400?text=Event',
           category:    'General',
         }));
