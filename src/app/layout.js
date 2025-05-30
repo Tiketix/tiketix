@@ -1,5 +1,6 @@
 import { Work_Sans } from "next/font/google";
 import "./globals.css";
+import AuthProvider from "@/context/AuthContext";
 
 
 const workSans = Work_Sans({
@@ -20,10 +21,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={workSans.variable}>
+        <AuthProvider>
           {children}
-        <footer>  
-
-        </footer>
+          <footer>
+          </footer>
+        </AuthProvider>
       </body>
     </html>
   );
